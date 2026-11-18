@@ -1,0 +1,27 @@
+{
+  "name": "chessbuddy-local",
+  "version": "0.1.0",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "dev": "node server/index.js",
+    "build": "vite build",
+    "build:worker": "vite build && node scripts/copy-stockfish.js",
+    "dev:worker": "wrangler dev",
+    "deploy:worker": "wrangler deploy",
+    "start": "node server/index.js --production",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "chess.js": "1.4.0",
+    "express": "5.1.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "stockfish": "17.1.0"
+  },
+  "devDependencies": {
+    "vite": "6.4.1",
+    "wrangler": "4.158.0"
+  }
+}

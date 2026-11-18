@@ -1,0 +1,37 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+.wrangler/
+
+# Local notebook, generated reports and personal files
+data/
+reports/
+*-preview.png
+public/chess-quick-guide.png
+
+# Unrelated project kept in this folder
+HomeGuard/
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+credentials
+.dev.vars
+
+# Python / Terraform (kept for consistency across projects)
+__pycache__/
+.venv/
+.terraform/
+*.tfstate*
+
+# Logs, OS and editor files
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
